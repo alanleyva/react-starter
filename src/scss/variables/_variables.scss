@@ -1,0 +1,35 @@
+/// layout colors
+$main-color: #16457a;
+$main-color-darker: darken($main-color, 20);
+$main-color-lighter: lighter($main-color, 20);
+$main-color-complementary: #d72638;
+$main-color-dark: #153131;
+$main-color-light: #eaf6ff;
+$main-color-disabled: lighter($main-color, 20);
+$cta-cart: #eadb1c;
+$cta-fav: #ff6028;
+$color-success: #01e668;
+$text-default: #303030;
+$text-light: #6c757d;
+
+/// screen sizes
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+//footer height
+$footer-height: 320px;
+$footer-height-xs: 475px;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;

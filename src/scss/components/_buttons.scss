@@ -1,0 +1,19 @@
+.btn-cart {
+  background-color: $cta-cart;
+  color: $main-color-dark;
+}
+
+.btn_lg {
+  min-width: 122px;
+  padding: 10px 16px;
+  line-height: 1.3;
+}
+
+.btn-cont {
+  &-50 {
+    .btn {
+      width: 45%;
+      margin: 5px;
+    }
+  }
+}

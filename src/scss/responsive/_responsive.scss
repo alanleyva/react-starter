@@ -1,0 +1,29 @@
+/// affect single segment of screen sizes
+@media (max-width: 575px) {
+  body {
+    margin-bottom: $footer-height-xs;
+  }
+  .footer {
+    height: $footer-height-xs;
+  }
+  .main_background {
+    padding-top: 90px;
+  }
+  .xs_hidden {
+    display: none;
+  }
+  .xs_hidden_opacity {
+    opacity: 0 !important;
+  }
+  .w_100_xs {
+    width: 100%;
+  }
+}
+@media (min-width: $screen-sm-min) {
+} // end of $screen-sm-min
+
+@media (min-width: $screen-md-min) {
+} // end of $screen-md-min
+
+@media (min-width: $screen-lg-min) {
+} // end of $screen-lg-min

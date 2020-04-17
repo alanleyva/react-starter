@@ -1,0 +1,150 @@
+.main_navbar {
+  background-color: $main-color;
+  -webkit-transition: background-color 0.4s; /* Safari */
+  transition: background-color 0.4s;
+  a,
+  button {
+    color: white;
+  }
+  a:hover,
+  button:hover {
+    color: darken(white, 20) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+  a:focus,
+  button:focus {
+    outline: 0;
+  }
+  a.disabled,
+  button.disabled,
+  .navbar-brand {
+    height: auto;
+  }
+  .navbar-brand {
+    img {
+      max-width: 200px;
+    }
+  }
+  &.transparent {
+    background-color: transparent;
+    color: white;
+    .navbar-brand {
+      opacity: 0;
+    }
+    a,
+    button {
+      &:not(.btn-light) {
+        color: white;
+        &:hover {
+          color: $main-color !important;
+          background-color: rgba(255, 255, 255, 0) !important;
+        }
+      }
+    }
+  }
+  &.invert {
+    &.transparent {
+      @extend .transparent;
+    }
+    background-color: white;
+    a,
+    button {
+      color: $main-color;
+    }
+    a:hover,
+    button:hover {
+      color: darken($main-color, 20) !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+    a:focus,
+    button:focus {
+      outline: 0;
+    }
+  }
+}
+
+.nav-link.disabled {
+  color: $main-color-disabled !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.search_bar_main {
+  background: #fff;
+  width: 80%;
+  max-width: 680px;
+  margin: 0 auto;
+  height: 42px;
+  margin-top: 11px;
+  border-radius: 2px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  i.search_bar_search_icon {
+    height: 100%;
+    line-height: 42px;
+    float: left;
+    width: 52px;
+    text-align: center;
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  input#search_bar_input {
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background: transparent;
+    width: calc(100% - 52px);
+    outline: none;
+    padding-right: 32px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: lighter;
+  }
+
+  i.clear_search_bar_field {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    color: rgba(189, 189, 189, 0.84);
+    display: none;
+    font-size: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer .app {
+  background-color: $main-color;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  z-index: $zindex-fixed;
+  width: 100%;
+
+  a,
+  button {
+    color: lighten($main-color-dark, 30%);
+    &.active {
+      color: $main-color-dark;
+    }
+  }
+}
+
+.footerCta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: #fff;
+  z-index: $zindex-fixed;
+  &.unactive {
+    bottom: -500px;
+  }
+}
